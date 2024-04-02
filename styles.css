@@ -150,9 +150,10 @@ nav button img {
 }
 
 
-  
 
-@media screen and (min-width: 800px) {
+
+
+/*@media screen and (min-width: 800px) {
     .nav-toggle-label {
         display: none;
     }
@@ -168,7 +169,7 @@ nav button img {
     }
 
     nav {
-        position: relative; /* changed from absolute */
+        position: relative; 
         text-align: left;
         transition: none;
         transform: scale(1,1);
@@ -213,6 +214,7 @@ nav button img {
         transform: scale(1,1);
     }
 }
+
 
 /* slide show start */
 .container {
@@ -395,7 +397,9 @@ nav button img {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+  .service-content h2{
+    color: black;
+  }
   .service-card {
     background-color: #f8f9fa;
     border-radius: 5px;
@@ -563,13 +567,14 @@ h2.Certifications-title {
 }
 
 .marquee-item {
-    flex: 0 0 16vw;
+    flex: 0 0 30vw;
     margin: 0 1vw;
 }
 
 .marquee-item img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 @keyframes scrolling {
@@ -873,5 +878,21 @@ h2.Certifications-title {
           left: 100%;
       }
   }
+  @media (max-width: 1300px){ 
+    nav ul{
+      margin-right: -150px;
+    }
+   }
+  @media (max-width: 576px){
+    .logo{
+      margin-left: 50px;
+      font-size: 30px;
+    }
+    .marquee-item {
+      flex: 0 0 70vw;
+      margin: 0 1vw;
+  }
+  }
+  
   
     
