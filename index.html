@@ -5,162 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nehra CSC</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-    <!-- navbar start -->
     <video autoplay muted loop id="video-background">
-      <source src="background12.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+        <source src="background12.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
     <header>
-      <h1 class="logo"> Nehra CSC and Khad Beej </h1>
-      
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
-      <nav>
-          <ul class="menu-items">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#aboutUs">About</a></li>
-              <li><a href="#Certifications">Certifications</a></li>
-              <li><a href="#contactus">Contact</a></li>
-          </ul>
-      </nav>
-      
-      <label for="nav-toggle" class="nav-toggle-label">
-          <span></span>
-      </label>
-  </header>
-      <!-- navbar end -->
-
-      <!-- slider start -->
-<section class="home" id="home">
-    <div class="container">	
-        <input type="radio" id="i1" name="images" checked/>
-        <input type="radio" id="i2" name="images" />
-        <input type="radio" id="i3" name="images" />
-        <input type="radio" id="i4" name="images"  />
-        <div class="slide_img" id="one">			
-            <img src="image2.webp">
+        <h1 class="logo">Nehra CSC and Khad Beej</h1>
+        <button id="toggle-language" class="btn">हिंदी</button>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul class="menu-items">
+                <li><a href="#home" class="english">Home</a><a href="#home" class="hindi">मुख्य पृष्ठ</a></li>
+                <li><a href="#services" class="english">Services</a><a href="#services" class="hindi">सेवाएं</a></li>
+                <li><a href="#aboutUs" class="english">About</a><a href="#aboutUs" class="hindi">के बारे में</a></li>
+                <li><a href="#Certifications" class="english">Certifications</a><a href="#Certifications" class="hindi">प्रमाणपत्र</a></li>
+                <li><a href="#contactus" class="english">Contact</a><a href="#contactus" class="hindi">संपर्क करें</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        
+    </header>
+    <section class="home" id="home">
+        <div class="container">
+            <input type="radio" id="i1" name="images" checked />
+            <input type="radio" id="i2" name="images" />
+            <input type="radio" id="i3" name="images" />
+            <input type="radio" id="i4" name="images" />
+            <div class="slide_img" id="one">
+                <img src="image2.webp">
                 <label class="prev" for="i4"><span></span></label>
-                <label class="next" for="i2"><span></span></label>	
-            
+                <label class="next" for="i2"><span></span></label>
+            </div>
+            <div class="slide_img" id="two">
+                <img src="image2.webp">
+                <label class="prev" for="i1"><span></span></label>
+                <label class="next" for="i3"><span></span></label>
+            </div>
+            <div class="slide_img" id="three">
+                <img src="image2.webp">
+                <label class="prev" for="i2"><span></span></label>
+                <label class="next" for="i4"><span></span></label>
+            </div>
+            <div class="slide_img" id="four">
+                <img src="background.jpg">
+                <label class="prev" for="i3"><span></span></label>
+                <label class="next" for="i1"><span></span></label>
+            </div>
+            <div id="nav_slide">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+                <label for="i4" class="dots" id="dot4"></label>
+            </div>
         </div>
-         
-        <div class="slide_img" id="two">
-            
-                <img src="image2.webp" >
-                    <label class="prev" for="i1"><span></span></label>
-                    <label class="next" for="i3"><span></span></label>
-            
-        </div>
-                
-        <div class="slide_img" id="three">
-                <img src="image2.webp">	
-                    <label class="prev" for="i2"><span></span></label>
-                    <label class="next" for="i4"><span></span></label>
-        </div>
-    
-    
-        <div class="slide_img" id="four">
-                <img src="background.jpg">	
-                
-                    <label class="prev" for="i3"><span></span></label>
-                    <label class="next" for="i1"><span></span></label>
-    
-        </div>
-    
-        <div id="nav_slide">
-            <label for="i1" class="dots" id="dot1"></label>
-            <label for="i2" class="dots" id="dot2"></label>
-            <label for="i3" class="dots" id="dot3"></label>
-            <label for="i4" class="dots" id="dot4"></label>
-        </div>
-            
+    </section>
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="7" loop="infinite">
+            <span class="english">Welcome to Sandeep Nehra CSC - "Kaam Hamara Vishwas Apka"</span>
+            <span class="hindi">संदीप नेहरा CSC में आपका स्वागत है - "काम हमारा विश्वास आपका"</span>
+        </marquee>
     </div>
-</section>  
- 
-    <!-- slider end  -->
-    <div class="marquee-container"> 
-      <marquee behavior="scroll" direction="left" scrollamount="7" loop="infinite">  Welcome to Sandeep Nehra CSC - "Kaam Hamara Vishwas Apka"</marquee>
-    </div>
-    
-    <!-- services section start  -->
     <section class="services" id="services">
-      
-        <div class="container1" >
-          <h2 class="service-title">Our Services</h2>
-          <div class="service-section">
-            <div class="service-card">
-              <img src="image1.jpg" alt="Service 1">
-              <div class="service-content">
-                <h2 class="service-name">Service 1</h2>
-                <p class="service-description">Description of Service 1.</p>
-              </div>
-            </div>
-            <div class="service-card">
-              <img src="image1.jpg" alt="Service 2">
-              <div class="service-content">
-                <h2 class="service-name">Service 2</h2>
-                <p class="service-description">Description of Service 2.</p>
-              </div>
-            </div>
-            <div class="service-card">
-              <img src="image1.jpg" alt="Service 3">
-              <div class="service-content">
-                <h2 class="service-name">Service 3</h2>
-                <p class="service-description">Description of Service 3.</p>
-              </div>
-            </div>
-            <div class="service-card">
-                <img src="image1.jpg" alt="Service 2">
-                <div class="service-content">
-                  <h2 class="service-name">Service 2</h2>
-                  <p class="service-description">Description of Service 2.</p>
+        <div class="container1">
+            <h2 class="service-title english">Our Services</h2>
+            <h2 class="service-title hindi">हमारी सेवाएं</h2>
+            <div class="service-section">
+                <div class="service-card">
+                    <img src="image1.jpg" alt="Service 1">
+                    <div class="service-content">
+                        <h2 class="service-name english">Service 1</h2>
+                        <h2 class="service-name hindi">सेवा 1</h2>
+                        <p class="service-description english">Description of Service 1.</p>
+                        <p class="service-description hindi">सेवा 1 का विवरण।</p>
+                    </div>
                 </div>
-              </div>
-              <div class="service-card">
-                <img src="image1.jpg" alt="Service 2">
-                <div class="service-content">
-                  <h2 class="service-name">Service 2</h2>
-                  <p class="service-description">Description of Service 2.</p>
+                <div class="service-card">
+                    <img src="image1.jpg" alt="Service 2">
+                    <div class="service-content">
+                        <h2 class="service-name english">Service 2</h2>
+                        <h2 class="service-name hindi">सेवा 2</h2>
+                        <p class="service-description english">Description of Service 2.</p>
+                        <p class="service-description hindi">सेवा 2 का विवरण।</p>
+                    </div>
                 </div>
-              </div>
-              <div class="service-card">
-                <img src="image1.jpg" alt="Service 2">
-                <div class="service-content">
-                  <h2 class="service-name">Service 2</h2>
-                  <p class="service-description">Description of Service 2.</p>
+                <div class="service-card">
+                    <img src="image1.jpg" alt="Service 3">
+                    <div class="service-content">
+                        <h2 class="service-name english">Service 3</h2>
+                        <h2 class="service-name hindi">सेवा 3</h2>
+                        <p class="service-description english">Description of Service 3.</p>
+                        <p class="service-description hindi">सेवा 3 का विवरण।</p>
+                    </div>
                 </div>
-              </div>
-            <!-- Add more service cards here -->
-          </div>
+                <div class="service-card">
+                    <img src="image1.jpg" alt="Service 2">
+                    <div class="service-content">
+                        <h2 class="service-name english">Service 2</h2>
+                        <h2 class="service-name hindi">सेवा 2</h2>
+                        <p class="service-description english">Description of Service 2.</p>
+                        <p class="service-description hindi">सेवा 2 का विवरण।</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="image1.jpg" alt="Service 2">
+                    <div class="service-content">
+                        <h2 class="service-name english">Service 2</h2>
+                        <h2 class="service-name hindi">सेवा 2</h2>
+                        <p class="service-description english">Description of Service 2.</p>
+                        <p class="service-description hindi">सेवा 2 का विवरण।</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="image1.jpg" alt="Service 2">
+                    <div class="service-content">
+                        <h2 class="service-name english">Service 2</h2>
+                        <h2 class="service-name hindi">सेवा 2</h2>
+                        <p class="service-description english">Description of Service 2.</p>
+                        <p class="service-description hindi">सेवा 2 का विवरण।</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="services-grid">
-          <div class="service-item">
-            <div class="service-icon">
-              <i class="fas fa-laptop"></i>
+            <div class="service-item">
+                <div class="service-icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
             </div>
-            <!-- Add content for service icon -->
-          </div>
         </div>
-      </section>
-      
-    <!-- services section end -->
-    <!-- About me start -->
+    </section>
     <section class="aboutUs" id="aboutUs">
         <img src="man.jpg" alt="computer user">
         <div class="content-about">
-            <h2>About Us</h2>
-            <h4>CSC Operator  </h4>
-            <p class="description" >
-              My name is Sandeep Nehra, and I am a certified and verified CSC center operator. With years of experience in managing CSC operations, I ensure top-notch services for all our clients. Additionally, I specialize in providing high-quality seeds, fertilizers, and pesticides tailored for various crops. My goal is to contribute to the success and growth of agriculture by offering reliable and efficient solutions to farmers. With a commitment to excellence and customer satisfaction, I strive to make a positive impact in the agricultural sector.
-            </p>
+            <h2 class="english">About Us</h2>
+            <h2 class="hindi">हमारे बारे में</h2>
+            <h4 class="english">CSC Operator</h4>
+            <h4 class="hindi">CSC ऑपरेटर</h4>
+            <p class="description english">My name is Sandeep Nehra, and I am a certified and verified CSC center operator. With years of experience in managing CSC operations, I ensure top-notch services for all our clients. Additionally, I specialize in providing high-quality seeds, fertilizers, and pesticides tailored for various crops. My goal is to contribute to the success and growth of agriculture by offering reliable and efficient solutions to farmers. With a commitment to excellence and customer satisfaction, I strive to make a positive impact in the agricultural sector.</p>
+            <p class="description hindi">मेरा नाम संदीप नेहरा है, और मैं एक प्रमाणित और सत्यापित सीएससी केंद्र संचालक हूं। सीएससी संचालन के प्रबंधन में वर्षों के अनुभव के साथ, मैं अपने सभी ग्राहकों के लिए शीर्ष पायदान सेवाएं सुनिश्चित करता हूं। इसके अतिरिक्त, मैं विभिन्न फसलों के लिए उच्च गुणवत्ता वाले बीज, उर्वरक और कीटनाशक उपलब्ध कराने में विशेषज्ञ हूं। मेरा लक्ष्य किसानों को विश्वसनीय और कुशल समाधान प्रदान करके कृषि की सफलता और विकास में योगदान देना है। उत्कृष्टता और ग्राहक संतुष्टि के प्रति प्रतिबद्धता के साथ, मैं कृषि क्षेत्र में सकारात्मक प्रभाव डालने का प्रयास करता हूं।</p>
             <button class="btn">Hire Me</button>
         </div>
     </section>
@@ -325,6 +314,34 @@
     } else {
       header.classList.remove('scrolled');
     }
+  });
+  const toggleButton = document.getElementById('toggle-language');
+  const englishElements = document.querySelectorAll('.english');
+  const hindiElements = document.querySelectorAll('.hindi');
+
+  toggleButton.addEventListener('click', function() {
+    if (toggleButton.textContent === 'हिंदी') {
+      toggleButton.textContent = 'English';
+      englishElements.forEach(element => {
+        element.style.display = 'none';
+      });
+      hindiElements.forEach(element => {
+        element.style.display = 'block';
+      });
+    } else {
+      toggleButton.textContent = 'हिंदी';
+      englishElements.forEach(element => {
+        element.style.display = 'block';
+      });
+      hindiElements.forEach(element => {
+        element.style.display = 'none';
+      });
+    }
+  });
+
+  // Hide Hindi elements initially
+  hindiElements.forEach(element => {
+    element.style.display = 'none';
   });
 </script>
 
