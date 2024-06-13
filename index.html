@@ -14,8 +14,12 @@
 </head>
 <body>
     <!-- navbar start -->
+    <video autoplay muted loop id="video-background">
+      <source src="background12.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <header>
-      <h1 class="logo">Sandeep Nehra CSC </h1>
+      <h1 class="logo"> Nehra CSC and Khad Beej </h1>
       
       <input type="checkbox" id="nav-toggle" class="nav-toggle">
       <nav>
@@ -47,7 +51,7 @@
                 <label class="next" for="i2"><span></span></label>	
             
         </div>
-        
+         
         <div class="slide_img" id="two">
             
                 <img src="image2.webp" >
@@ -153,12 +157,9 @@
         <img src="man.jpg" alt="computer user">
         <div class="content-about">
             <h2>About Us</h2>
-            <h4> Developer & Designer </h4>
+            <h4>CSC Operator  </h4>
             <p class="description" >
-                I am a Front-end web developer. I can provide clean code and pixel perfect design. I also make the
-                website more & more interactive with web animations. I can provide clean code and pixel perfect. I also
-                make the website more & more interactive with web animations. A responsive design makes your website
-                accessible to all users. regardless of their device.
+              My name is Sandeep Nehra, and I am a certified and verified CSC center operator. With years of experience in managing CSC operations, I ensure top-notch services for all our clients. Additionally, I specialize in providing high-quality seeds, fertilizers, and pesticides tailored for various crops. My goal is to contribute to the success and growth of agriculture by offering reliable and efficient solutions to farmers. With a commitment to excellence and customer satisfaction, I strive to make a positive impact in the agricultural sector.
             </p>
             <button class="btn">Hire Me</button>
         </div>
@@ -243,50 +244,36 @@
 </div>
 <!-- contact us form start -->
 <section class="contactus" id="contactus">
-<h2 class="contactus-title">Get in Touch</h2>
-<div class="contactus-container" id="contactus-container">
+  <h2 class="contactus-title">Get in Touch</h2>
+  <div class="contactus-container" id="contactus-container">
     <div class="contactus-content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
+      <div class="detail">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="info">
           <div class="topic">Address</div>
-          <div class="text-one">Ramalwas,Charkhi Dadri</div>
-          <div class="text-two">Haryana,India(127310)</div>
-        </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">9050474849</div>
-          
-        </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">codinglab@gmail.com</div>
-          <div class="text-two">info.codinglab@gmail.com</div>
+          <div>Ramalwas, Charkhi Dadri</div>
+          <div>Haryana, India (127310)</div>
         </div>
       </div>
-      <div class="right-side">
-        <div class="topic-text">Send us a message</div>
-        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name">
+      <div class="detail">
+        <i class="fas fa-phone-alt"></i>
+        <div class="info">
+          <div class="topic">Phone</div>
+          <div>9050474849</div>
         </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email">
+      </div>
+      <div class="detail">
+        <i class="fas fa-envelope"></i>
+        <div class="info">
+          <div class="topic">Email</div>
+          <div>codinglab@gmail.com</div>
+          <div>info.codinglab@gmail.com</div>
         </div>
-        <div class="input-box message-box">
-          
-        </div>
-        <div class="button">
-          <input type="button" value="Send Now" >
-        </div>
-      </form>
-    </div>
+      </div>
     </div>
   </div>
 </section>
+
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4137.748005438257!2d76.133057799545!3d28.500079354331262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3912934910e91f09%3A0xfb4b2cbac983bb04!2sNehra%20khad%20beej%20Bhandar%20%26%20CSC!5e0!3m2!1sen!2sin!4v1710237086111!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <!-- footer start -->
@@ -324,12 +311,22 @@
                   <p class="mb-0 f_400">© NehraCSC Inc.. 2024 All rights reserved.</p>
               </div>
               <div class="col-lg-6 col-sm-5 text-right">
-                  <p>Made by <i class="icon_heart"></i> in <a href="http://cakecounter.com" target="_blank">Harsh Sharma</a></p>
+                  <p>Made by <i class="icon_heart"></i>  <a href=" https://harshsharmahr19.github.io/Portfolio/" target="_blank">Harsh Sharma</a></p>
               </div>
           </div>
       </div>
   </div>
 </footer>
-    
+<script>
+  window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    if (window.scrollY > 50) { // Adjust the scroll value as needed
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
 </body>
 </html>
