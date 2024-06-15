@@ -190,6 +190,41 @@ nav button img {
     font-size: 25px;
   }
 }
+/*scroll up btn*/
+.menu-btn{
+  color: orangered;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+  margin-top: 20px;
+}
+.scroll-up-btn{
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background:  #FF5349;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: black;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+  bottom: 90px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover{
+  filter: brightness(90%);
+}
 
 
 /* slide show start */
@@ -523,7 +558,20 @@ nav button img {
     }
 }
 /* about section end */
+/* whatsapp icon*/
+/* Style for the WhatsApp icon */
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
 
+/* Style for the WhatsApp link */
+.whatsapp-link {
+  text-decoration: none;
+  color: inherit;
+}
 /* certification start */
 /* CSS styles */
 h2.Certifications-title {
