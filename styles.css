@@ -820,6 +820,12 @@ h2.Certifications-title {
       flex: 0 0 70vw;
       margin: 0 1vw;
   }
+  .btn {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+    border-radius: 15px; /* Adjust border-radius for smaller screens */
+    margin-top: -50px; /* Adjust margin-top for smaller screens */
+    font-size: 14px; /* Adjust font size for better readability */
+  }
   }
   
   

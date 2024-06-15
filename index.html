@@ -343,6 +343,18 @@
   hindiElements.forEach(element => {
     element.style.display = 'none';
   });
+  function expandImage(element) {
+    var modal = document.getElementById("modal-container");
+    var modalImg = document.getElementById("modal-img");
+    modal.style.display = "block";
+    modalImg.src = element.getElementsByTagName("img")[0].src;
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal-container");
+    modal.style.display = "none";
+}
+
 </script>
 
 </body>
