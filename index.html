@@ -8,6 +8,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+   
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
 </head>
 <body>
     <video autoplay muted loop id="video-background">
@@ -15,7 +18,16 @@
         Your browser does not support the video tag.
     </video>
     <header>
-        <h1 class="logo">Nehra CSC and Khad Beej</h1>
+      <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <h1 class="logo">
+      Nehra CSC and Khad Beej 
+      <a href="https://wa.me/9050474849" target="_blank" class="whatsapp-link">
+        <img src="WhatsApp icon.webp" alt="WhatsApp" class="whatsapp-icon">
+      </a>
+    </h1>
+    
         <button id="toggle-language" class="btn">हिंदी</button>
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
@@ -354,6 +366,22 @@ function closeModal() {
     var modal = document.getElementById("modal-container");
     modal.style.display = "none";
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollUpBtn = document.querySelector('.scroll-up-btn');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 100) {
+            scrollUpBtn.classList.add('show');
+        } else {
+            scrollUpBtn.classList.remove('show');
+        }
+    });
+
+    scrollUpBtn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+
 
 </script>
 
