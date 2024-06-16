@@ -51,22 +51,22 @@
             <input type="radio" id="i3" name="images" />
             <input type="radio" id="i4" name="images" />
             <div class="slide_img" id="one">
-                <img src="image2.webp">
+                <img src="all services.jpeg">
                 <label class="prev" for="i4"><span></span></label>
                 <label class="next" for="i2"><span></span></label>
             </div>
             <div class="slide_img" id="two">
-                <img src="image2.webp">
+                <img src="khaad beej.jpeg">
                 <label class="prev" for="i1"><span></span></label>
                 <label class="next" for="i3"><span></span></label>
             </div>
             <div class="slide_img" id="three">
-                <img src="image2.webp">
+                <img src="all facilities.jpeg">
                 <label class="prev" for="i2"><span></span></label>
                 <label class="next" for="i4"><span></span></label>
             </div>
             <div class="slide_img" id="four">
-                <img src="background.jpg">
+                <img src="money.jpeg">
                 <label class="prev" for="i3"><span></span></label>
                 <label class="next" for="i1"><span></span></label>
             </div>
@@ -90,7 +90,7 @@
             <h2 class="service-title hindi">हमारी सेवाएं</h2>
             <div class="service-section">
                 <div class="service-card">
-                    <img src="image1.jpg" alt="Service 1">
+                    <img src="caste.jpeg" alt="Service 1">
                     <div class="service-content">
                         <h2 class="service-name english">Service 1</h2>
                         <h2 class="service-name hindi">सेवा 1</h2>
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="image1.jpg" alt="Service 2">
+                    <img src="csc.jpeg" alt="Service 2">
                     <div class="service-content">
                         <h2 class="service-name english">Service 2</h2>
                         <h2 class="service-name hindi">सेवा 2</h2>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="image1.jpg" alt="Service 3">
+                    <img src="csc.jpeg" alt="Service 3">
                     <div class="service-content">
                         <h2 class="service-name english">Service 3</h2>
                         <h2 class="service-name hindi">सेवा 3</h2>
@@ -117,7 +117,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="image1.jpg" alt="Service 2">
+                    <img src="all facilities.jpeg" alt="Service 2">
                     <div class="service-content">
                         <h2 class="service-name english">Service 2</h2>
                         <h2 class="service-name hindi">सेवा 2</h2>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <img src="image1.jpg" alt="Service 2">
+                    <img src="csc.jpeg" alt="Service 2">
                     <div class="service-content">
                         <h2 class="service-name english">Service 2</h2>
                         <h2 class="service-name hindi">सेवा 2</h2>
@@ -380,7 +380,18 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollUpBtn.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+    
 });
+document.addEventListener("DOMContentLoaded", function () {
+    let currentIndex = 1;
+    const totalImages = 4;
+
+    setInterval(function () {
+        document.getElementById(`i${currentIndex}`).checked = true;
+        currentIndex = currentIndex === totalImages ? 1 : currentIndex + 1;
+    }, 3000); // Change image every 3 seconds
+});
+
 
 
 </script>
