@@ -864,7 +864,7 @@ h2.Certifications-title {
   @media (max-width: 576px){
     .logo{
       margin-left: 50px;
-      font-size: 15px;
+      font-size: 20px;
     }
     .marquee-item {
       flex: 0 0 70vw;
