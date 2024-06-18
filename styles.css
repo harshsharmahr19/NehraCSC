@@ -575,85 +575,87 @@ nav button img {
 /* certification start */
 /* CSS styles */
 h2.Certifications-title {
-    margin-top: 10px;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
+  margin-top: 10px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .marquee {
-    overflow: hidden; 
+  overflow: hidden; 
 }
 
 .marquee-content {
-    display: flex;
-    animation: scrolling 10s linear infinite;
+  display: flex;
+  animation: scrolling 10s linear infinite;
 }
 
 .marquee-item {
-    flex: 0 0 30vw;
-    margin: 0 1vw;
+  flex: 0 0 30vw;
+  margin: 0 1vw;
 }
 
 .marquee-item img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%; /* Adjust as needed */
+  height: 200px; /* Adjust as needed to set a consistent height */
+  object-fit: cover; /* Ensures the image covers the assigned area */
 }
 
 @keyframes scrolling {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-144vw); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-144vw); }
 }
 
 /* Pause animation on hover */
 .marquee:hover .marquee-content {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 /* Style for modal container */
 #modal-container {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Style for modal */
 .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
-    background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: white;
 }
 
 .modal img {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
 }
 
 .modal-item img {
-    border: none;
-    background: none;
+  border: none;
+  background: none;
 }
+
 
     /* contact us form start */
     .contactus-container {
@@ -862,7 +864,7 @@ h2.Certifications-title {
   @media (max-width: 576px){
     .logo{
       margin-left: 50px;
-      font-size: 25px;
+      font-size: 15px;
     }
     .marquee-item {
       flex: 0 0 70vw;
