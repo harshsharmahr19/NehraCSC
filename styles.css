@@ -13,7 +13,6 @@ body {
     font-family:"Georgia", "Just Another Hand", "cursive";
     
 }
-
 .content {
     height: 200vh;
     
@@ -23,9 +22,7 @@ body {
     display: grid;
     place-items: center;
 }
-
 /* navigation styles start here */
-
 #video-background {
   position: fixed;
   right: 0;
@@ -36,7 +33,6 @@ body {
   height: auto;
   z-index: -1000;
 }
-
 header {
   text-align: center;
   position: fixed;
@@ -46,15 +42,13 @@ header {
   background-color: transparent; /* Optional: Background color for the header */
   transition: background-color 0.3s ease;
 }
-
 header.scrolled {
   background-color: #333; /* Change this to the desired background color */
 }
-
 .logo {
   color: white;
-  
-  
+
+
   transition: background-color 0.3s ease; /* Smooth transition for the background color */
 }
 /*whatsapp icon*/
@@ -103,23 +97,19 @@ header.scrolled {
   background-color: #ffca70;
   margin-top: -70px;
 }
-
 /* Class to add background color when scrolling */
 .scrolled .logo {
   background-color: #333; /* Change this to the desired background color */
   padding: 10px; /* Optional: Add padding to make the background more visible */
 }
-
 .nav-toggle {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
-
 .nav-toggle:focus ~ .nav-toggle-label {
   outline: 3px solid rgba(173, 216, 230, 0.75); /* lightblue color */
 }
-
 .nav-toggle-label {
   position: absolute;
   top: 0;
@@ -129,7 +119,6 @@ header.scrolled {
   display: flex;
   align-items: center;
 }
-
 .nav-toggle-label span,
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
@@ -140,21 +129,17 @@ header.scrolled {
   border-radius: 2px;
   position: relative;
 }
-
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: '';
   position: absolute;
 }
-
 .nav-toggle-label span::before {
   bottom: 7px;
 }
-
 .nav-toggle-label span::after {
   top: 7px;
 }
-
 nav {
   position: absolute;
   text-align: left;
@@ -166,7 +151,6 @@ nav {
   transform-origin: top;
   transition: transform 400ms ease-in-out;
 }
-
 nav ul {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(your-background-image.jpg);
   margin: 0;
@@ -174,12 +158,10 @@ nav ul {
   list-style: none;
   margin-right: -200px;
 }
-
 nav li {
   margin-bottom: 1em;
   margin-left: 3em;
 }
-
 nav a {
   color: white;
   text-decoration: none;
@@ -188,20 +170,16 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-
 nav a:hover {
   color: #fc4c00;
 }
-
 .nav-toggle:checked ~ nav {
   transform: scale(1,1);
 }
-
 .nav-toggle:checked ~ nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 250ms;
 }
-
 nav button {
   background: none;
   border: none;
@@ -211,12 +189,10 @@ nav button {
   display: flex;
   align-items: center;
 }
-
 nav button img {
   width: 24px; /* Adjust as needed */
   height: auto;
 }
-
 /* Media Query for screens with a max-width of 576px */
 @media (max-width: 576px) {
   .logo {
@@ -259,8 +235,6 @@ nav button img {
 .scroll-up-btn:hover{
   filter: brightness(90%);
 }
-
-
 /* slide show start */
 .container {
     margin: 0 auto;
@@ -394,6 +368,7 @@ nav button img {
       border: none;
       width: 100%;
       height: 0;
+      padding-bottom: 55%;
       padding-bottom: 75%;
     }
     .container .slide_img .prev, .container .slide_img .next {
@@ -425,7 +400,6 @@ nav button img {
       margin-bottom: 20px;
     }
     
-
 /* services section start */
 .container1{
     margin-top: 70px;
@@ -435,7 +409,6 @@ nav button img {
   color: white;
   animation: imgg 2s ease-in-out infinite;
   animation-delay: 2s;
-
 }
 .service-section {
     display: flex;
@@ -473,18 +446,19 @@ nav button img {
         transform: translateY(0);
     }
 }
-
   
   
   .service-card:hover {
     transform: translateY(-10px);
   }
-  
+
   .service-card img {
     width: 100%;
+    height: auto;
     height: 60%;
+    transition: transform 0.5s;
   }
-  
+
   .service-content {
     padding: 20px;
     text-align: center;
@@ -509,22 +483,66 @@ nav button img {
       flex-basis: 100%;
     }
   }
+  .layer{
+    width: 100%;
+    height:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient( rgba(0, 0, 0, 0.7),#FF5349);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3{
+  color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer p{
+    font-size: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #FF5349;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.service-card:hover img{
+  transform: scale(1.1);
+}
+.service-card:hover .layer{
+  height: 100%;
+}
 /* services section end */
-
 /* about secton start */
 #aboutUs {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 #aboutUs img {
     width: 400px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 6px 6px 8px rgba(0, 140, 255, 0.5);
 }
-
 .aboutUs img{
     animation: imgg 2s ease-in-out infinite;
     animation-delay: 2s;
@@ -540,23 +558,18 @@ nav button img {
         transform: translateY(0);
     }
 }
-
-
 .content-about {
     margin: 20px 0;
 }
-
 .content-about h2 {
     font-size: 50px;
     color: #ffca70;
 }
-
 .content-about h4 {
     font-size: 20px;
     color: #fff;
     margin: 10px 0;
 }
-
 .description {
     color: #fff;
     margin: 20px 0;
@@ -564,7 +577,6 @@ nav button img {
     line-height: 30px;
     font-weight: 100;
 }
-
 .btn {
     font-weight: bold;
     border: 2px solid #ffca70;
@@ -574,18 +586,15 @@ nav button img {
     transition: all 0.4s;
     background-color: #ffca70;
 }
-
 .btn:hover {
     border: 2px solid #ffca70;
     background: transparent;
     color: #ffca70;
 }
-
 @media screen and (max-width: 790px) {
     #aboutUs img {
         width: 80%;
     }
-
     #aboutUs {
         grid-template-columns: 1fr;
         place-items: center;
@@ -600,7 +609,6 @@ nav button img {
   margin-left: 10px;
   vertical-align: middle;
 }
-
 /* Style for the WhatsApp link */
 .whatsapp-link {
   text-decoration: none;
@@ -614,38 +622,31 @@ h2.Certifications-title {
   text-align: center;
   text-transform: uppercase;
 }
-
 .marquee {
   overflow: hidden; 
 }
-
 .marquee-content {
   display: flex;
   animation: scrolling 10s linear infinite;
 }
-
 .marquee-item {
   flex: 0 0 30vw;
   margin: 0 1vw;
 }
-
 .marquee-item img {
   display: block;
   width: 100%; /* Adjust as needed */
   height: 200px; /* Adjust as needed to set a consistent height */
   object-fit: cover; /* Ensures the image covers the assigned area */
 }
-
 @keyframes scrolling {
   0% { transform: translateX(0); }
   100% { transform: translateX(-144vw); }
 }
-
 /* Pause animation on hover */
 .marquee:hover .marquee-content {
   animation-play-state: paused;
 }
-
 /* Style for modal container */
 #modal-container {
   display: none;
@@ -657,7 +658,6 @@ h2.Certifications-title {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
 /* Style for modal */
 .modal {
   display: flex;
@@ -671,12 +671,10 @@ h2.Certifications-title {
   height: 50%;
   background-color: white;
 }
-
 .modal img {
   max-width: 100%;
   max-height: 100%;
 }
-
 .close {
   position: absolute;
   top: 10px;
@@ -684,13 +682,10 @@ h2.Certifications-title {
   cursor: pointer;
   font-size: 24px;
 }
-
 .modal-item img {
   border: none;
   background: none;
 }
-
-
     /* contact us form start */
     .contactus-container {
       width: 100%;
@@ -911,6 +906,3 @@ h2.Certifications-title {
     font-size: 14px; /* Adjust font size for better readability */
   }
   }
-  
-  
-    
