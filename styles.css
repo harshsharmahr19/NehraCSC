@@ -388,6 +388,8 @@ nav button img {
       height: 12px;
     }
   }
+  /*marquee contact*/
+  
   
   
     /* slide show end */
@@ -577,7 +579,7 @@ nav button img {
     line-height: 30px;
     font-weight: 100;
 }
-.btn {
+.btn1{
     font-weight: bold;
     border: 2px solid #ffca70;
     cursor: pointer;
@@ -586,7 +588,7 @@ nav button img {
     transition: all 0.4s;
     background-color: #ffca70;
 }
-.btn:hover {
+.btn1:hover {
     border: 2px solid #ffca70;
     background: transparent;
     color: #ffca70;
@@ -912,9 +914,9 @@ h2.Certifications-title {
       margin: 0 1vw;
   }
   .btn {
-    padding: 8px 16px; /* Adjust padding for smaller screens */
+    padding: 5px 10px; /* Adjust padding for smaller screens */
     border-radius: 15px; /* Adjust border-radius for smaller screens */
-    margin-top: -50px; /* Adjust margin-top for smaller screens */
+    margin-top: -20px; /* Adjust margin-top for smaller screens */
     font-size: 14px; /* Adjust font size for better readability */
   }
   }
