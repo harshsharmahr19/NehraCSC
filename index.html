@@ -10,9 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
    
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css ">
-  
+      <style>
+        .scheme {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .scheme h3 {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
+  <div id="preloader"></div>
     <video autoplay muted loop id="video-background">
         <source src="background12.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -87,17 +97,17 @@
             <span class="hindi">संदीप नेहरा CSC में आपका स्वागत है - "काम हमारा विश्वास आपका"</span>
         </marquee>
     </div>
-    <div class="marquee-container">
-      <marquee behavior="alternate" direction="left" scrollamount="7" loop="infinite" style="background-color: yellow; color: #000;">
-        <span class="english" style="font-size: 40px;">Contact us for any service</span>
-        <span class="hindi" style="font-size: 40px;">किसी भी सेवा के लिए हमसे संपर्क करें</span>
+    <div class="marquee-container1 mobile-marquee">
+      <marquee behavior="alternate" direction="left" scrollamount="7" loop="infinite" style="  color: deepskyblue;  ">
+        <span class="english">Contact us for any service</span>
+        <span class="hindi">किसी भी सेवा के लिए हमसे संपर्क करें</span>
         <a href="https://wa.me/9050474849" target="_blank" class="whatsapp-link">
-          <img src="WhatsApp icon.webp" alt="WhatsApp" class="whatsapp-icon"  style="width: 70px; height: 70px;">
+          <img src="WhatsApp icon.webp" alt="WhatsApp" class="whatsapp-icon1" style="width: 40px; height: 40px;">
         </a>
-    </marquee>
-  </div>
+      </marquee>
+    </div>
     
-    <section class="services" id="services"> 
+    <section class="services animate-on-scroll" id="services">
         <div class="container1">
             <h2 class="service-title english">Our Services</h2>
             <h2 class="service-title hindi">हमारी सेवाएं</h2>
@@ -171,7 +181,7 @@
                         <h2 class="service-name english">Khaad Beej Available</h2>
                         <h2 class="service-name hindi">खाद बीज उपलब्ध</h2>
                         <p class="service-description english">Khad Beej Available: Seeds, fertilizers, and pesticides are available for agriculture, aiding major crops.</p>
-                        <p class="service-description hindi">खाद बीज उपलब्ध: खेती के लिए बीज, उर्वरक, और कीटनाशक सर्विस में उपलब्ध हैं, जो प्रमुख फसलों के लिए सहायक हैं।</p>
+                        <p class="service-description hindi">खाद बीज उपलब्ध: खेती के लिए बीज, उर्वरक और कीटनाशक उपलब्ध हैं, जो प्रमुख फसलों के लिए सहायक हैं।</p>
                     </div>
                 </div>
                 <div class="service-card">
@@ -198,8 +208,36 @@
             </div>
         </div>
     </section>
-    <!--sbi bank start-->
-   
+   <!--sbi bank start-->
+   <!-- <div class="sbi-mini-branch">
+    <div class="banner">
+      <h1>Welcome to Our CSC!</h1>
+      <p>Exciting News: We Now Have an SBI Mini Branch!</p>
+  </div>
+
+  <div class="section" id="sbi-mini-branch2">
+      <h2>SBI Mini Branch at Our CSC</h2>
+      <p>We are excited to announce the opening of our SBI Mini Branch! Now, you can enjoy a range of banking services right here in our community.</p>
+      <ul class="services-list">
+          <li>Account Opening</li>
+          <li>Cash Deposits and Withdrawals</li>
+          <li>Money Transfers</li>
+          <li>Loan Applications</li>
+          <li>And many more...</li>
+      </ul>
+      <div class="contact-info">
+          <p><strong>Operating Hours:</strong></p>
+          <p>Monday to Friday: 9:00 AM to 5:00 PM</p>
+          <p>Saturday: 9:00 AM to 1:00 PM</p>
+          <p>Sunday: Closed</p>
+          <p><strong>Contact Us:</strong></p>
+          <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+          <p>Email: <a href="mailto:info@yourcsc.com">info@yourcsc.com</a></p>
+          <p>Address: [Your Address]</p>
+      </div>
+      <img src="path_to_image.jpg" alt="SBI Mini Branch" style="width: 100%; max-width: 600px; margin-top: 20px;">
+  </div>
+    </div>-->
     <!--sbi bank end-->
     <!--about me start-->
     <section class="aboutUs" id="aboutUs">
@@ -209,89 +247,106 @@
             <h2 class="hindi">हमारे बारे में</h2>
             <h4 class="english">CSC Operator and Khad Beej Bhandar</h4>
             <h4 class="hindi">CSC ऑपरेटर एंड खाद बीज भंडार</h4>
-            <p class="description english">My name is Sandeep Nehra, and I am a certified and verified CSC center operator. With years of experience in managing CSC operations, I ensure top-notch services for all our clients. Additionally, I specialize in providing high-quality seeds, fertilizers, and pesticides tailored for various crops. My goal is to contribute to the success and growth of agriculture by offering reliable and efficient solutions to farmers. With a commitment to excellence and customer satisfaction, I strive to make a positive impact in the agricultural sector.</p>
-            <p class="description hindi">मेरा नाम संदीप नेहरा है, और मैं एक प्रमाणित और सत्यापित सीएससी केंद्र संचालक हूं। सीएससी संचालन के प्रबंधन में वर्षों के अनुभव के साथ, मैं अपने सभी ग्राहकों के लिए शीर्ष पायदान सेवाएं सुनिश्चित करता हूं। इसके अतिरिक्त, मैं विभिन्न फसलों के लिए उच्च गुणवत्ता वाले बीज, उर्वरक और कीटनाशक उपलब्ध कराने में विशेषज्ञ हूं। मेरा लक्ष्य किसानों को विश्वसनीय और कुशल समाधान प्रदान करके कृषि की सफलता और विकास में योगदान देना है। उत्कृष्टता और ग्राहक संतुष्टि के प्रति प्रतिबद्धता के साथ, मैं कृषि क्षेत्र में सकारात्मक प्रभाव डालने का प्रयास करता हूं।</p>
+            <p class="description english">My name is Sandeep Nehra, and I am a certified and verified CSC center operator. With years of experience in managing CSC operations, I ensure top-notch services for all our clients. Additionally, I provide high-quality seeds, fertilizers, and pesticides tailored for various crops. My goal is to contribute to the success and growth of agriculture by offering reliable and efficient solutions to farmers. With a commitment to excellence and customer satisfaction, I strive to make a positive impact in the agricultural sector.</p>
+            <p class="description hindi">मेरा नाम संदीप नेहरा है, और मैं एक प्रमाणित और सत्यापित सीएससी केंद्र संचालक हूं। सीएससी संचालन के प्रबंधन में वर्षों के अनुभव के साथ, मैं अपने सभी ग्राहकों के लिए शीर्ष पायदान सेवाएं सुनिश्चित करता हूं। इसके अतिरिक्त, मैं विभिन्न फसलों के लिए उच्च गुणवत्ता वाले बीज, उर्वरक और कीटनाशक उपलब्ध कराता हूं। मेरा लक्ष्य किसानों को विश्वसनीय और कुशल समाधान प्रदान करके कृषि की सफलता और विकास में योगदान देना है। उत्कृष्टता और ग्राहक संतुष्टि के प्रति प्रतिबद्धता के साथ, मैं कृषि क्षेत्र में सकारात्मक प्रभाव डालने का प्रयास करता हूं।</p>
             <button class="btn1">Know Me</button>
         </div>
     </section>
     <!-- about me end -->
-     <!-- certification start -->
-<section class="Certifications" id="Certifications">
-<h2 class="Certifications-title">Certifications</h2>
-<div class="marquee">
-    <div class="marquee-content"> 
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="sandeep certificate.jpeg" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="sandeep certificate 2.jpeg" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-      <div class="marquee-item" onclick="expandImage(this)">
-        <img src="image2.webp" alt="">
-      </div>
-      
-    </div>
+    <div id="governmentSchemes">
+      <!-- Scheme details will be inserted here dynamically -->
+  </div>
+     
+<!-- iframe start -->
+<section>
+  <div class="container1">
+    <h2 class="service-title english">Sarkari Network</h2>
+    <h2 class="service-title hindi">सरकारी नेटवर्क</h2>
+    <iframe src="https://www.sarkarinetwork.com/" width="100%" height="500" frameborder="0" scrolling="yes"></iframe>
   </div>
 </section>
-<div id="modal-container">
-    <div class="modal" onclick="closeModal()">
-        <span class="close">&times;</span>
-        <img id="modal-img" src="" alt="">
+<!-- iframe end -->
+<!--shopping -->
+<section class="Seeds" id="seeds">
+  <h2 class="service-title1 english" style="color: white;">Seeds</h2>
+            <h2 class="service-title1 hindi"style="color: white;">बीज</h2>
+  <div class="content-container">
+    
+    <div class="content-window">
+        <img src="vegetables/bhindi.jpg" alt="Kevin">
+        <div class="content-title">Bhindi</div>
+       
+        <div class="button-container">
+            <a href="#" class="btn-call"><i class="fas fa-phone"></i> Call</a>
+            <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+    <div class="content-window">
+        <img src="vegetables/cabbage.jpg" alt="Olympic">
+        <div class="content-title">Cabbage</div>
+       
+        <div class="button-container">
+            <a href="#" class="btn-call"><i class="fas fa-phone"></i> Call</a>
+            <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+    <div class="content-window">
+        <img src="vegetables/radish.jpg" alt="London">
+        <div class="content-title">Radish</div>
+       
+        <div class="button-container">
+            <a href="#" class="btn-call"><i class="fas fa-phone"></i> Call</a>
+            <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+    <div class="content-window">
+        <img src="vegetables/cauliflower.jpg" alt="Cat">
+        <div class="content-title">Cauliflower</div>
+       
+        <div class="button-container">
+            <a href="#" class="btn-call"><i class="fas fa-phone"></i> Call</a>
+            <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+    <div class="content-window">
+        <img src="vegetables/brinjal.jpg" alt="Stargazing">
+        <div class="content-title">Brinjal</div>
+       
+        <div class="button-container">
+            <a href="#" class="btn-call"><i class="fas fa-phone"></i> Call</a>
+            <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+    <div class="content-window">
+        <img src="vegetables/chilli.jpg" alt="Comic-Con">
+        <div class="content-title">Chilli</div>
+       
+        <div class="button-container">
+            <a href="#" class="btn-call"><i class="fas fa-phone"></i> Call</a>
+            <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+    <div class="content-window">
+        <img src="vegetables/beetroot.jpg" alt="Coffee">
+        <div class="content-title">Beetroot</div>
+        
+        <div class="button-container">
+            <a href="#" class="btn-call"><i class="fas fa-phone"></i> Call</a>
+            <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+    </div>
+    <div class="content-window">
+        <img src="vegetables/cabbage.jpg" alt="Beach">
+        <div class="content-title">Cabbage</div>
+        
+        <div class="button-container">
+            <a href="#" class="btn-call"><i class="fas fa-phone"></i> Call</a>
+            <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
     </div>
 </div>
+
+</section>
 <!-- contact us form start -->
 <section class="contactus" id="contactus">
   <h2 class="contactus-title">Get in Touch</h2>
@@ -316,7 +371,7 @@
         <i class="fas fa-envelope"></i>
         <div class="info">
           <div class="topic">Email</div>
-          <div>ramalwaskhadbeejbhandar@gmail.com</div>
+          <div>ramalwaskhadbeejcsc@gmail.com</div>
          
         </div>
       </div>
@@ -444,8 +499,58 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000); // Change image every 3 seconds
 });
 
+const animateOnScrollElements = document.querySelectorAll('.service-card');
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+        entry.target.classList.remove('visible');
+      }
+    });
+  }, { threshold: 0.5 });
 
+  animateOnScrollElements.forEach((element) => {
+    observer.observe(element);
+  });
+/*preloder*/
+
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load" , function(){
+            loader.style.display = "none";
+        })
+    /*Daily Updates code*/
+    // Fetch data from your backend endpoint
+    async function fetchGovernmentSchemes() {
+        try {
+            const response = await fetch('/api/government-schemes'); // Replace with your actual endpoint
+            const data = await response.json();
+            updateGovernmentSchemesUI(data); // Update UI with fetched data
+        } catch (error) {
+            console.error('Error fetching government schemes:', error);
+        }
+    }
+
+    // Update UI with fetched data
+    function updateGovernmentSchemesUI(data) {
+        const schemesContainer = document.getElementById('governmentSchemes');
+        schemesContainer.innerHTML = ''; // Clear previous content
+        
+        data.forEach(scheme => {
+            const schemeElement = document.createElement('div');
+            schemeElement.classList.add('scheme');
+            schemeElement.innerHTML = `
+                <h3>${scheme.title}</h3>
+                <p>${scheme.description}</p>
+                <p><strong>Last Updated:</strong> ${scheme.lastUpdated}</p>
+            `;
+            schemesContainer.appendChild(schemeElement);
+        });
+    }
+
+    // Call fetch function on page load or as needed
+    window.onload = fetchGovernmentSchemes;
 </script>
 
 </body>
