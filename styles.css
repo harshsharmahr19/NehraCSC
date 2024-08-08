@@ -23,6 +23,12 @@ body {
   z-index: 100;
 }
 
+@media (max-width: 767px) {
+  #preloader {
+    background-size: 30%; /* Larger size for small or mobile screens */
+  }
+}
+
 
 .scheme {
   border-bottom: 1px solid #ddd;
